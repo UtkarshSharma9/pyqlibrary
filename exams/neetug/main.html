@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDS - PYQ Library</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Correct path: go up 2 levels (../../) then into public folder -->
+    <link rel="stylesheet" href="../../public/style.css">
+    <link rel="stylesheet" href="../../public/exam.css">
+    <!-- KaTeX for LaTeX rendering -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="../../public/logo.png" alt="PYQ Library Logo" class="logo-img">
+        </div>
+
+        <nav class="nav">
+            <ul class="nav-links">
+                <li><a href="../../index.html" class="nav-item">Home</a></li>
+                <li class="dropdown-parent">
+                    <a href="#" class="nav-item">Exams Category<span class="dropdown-icon">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li class="has-submenu">
+                            <a href="#">Defence <span class="submenu-arrow">›</span></a>
+                            <ul class="submenu">
+                                <li><a href="../nda/main.html">NDA</a></li>
+                                <li><a href="../cds/main.html">CDS</a></li>
+                                <li><a href="../afcat/main.html">AFCAT</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="has-submenu">
+                            <a href="#">Engineering <span class="submenu-arrow">›</span></a>
+                            <ul class="submenu">
+                                <li><a href="../jeemains/main.html">JEE Main</a></li>
+                                <li><a href="../jeeadvance/main.html">JEE Advanced</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="has-submenu">
+                            <a href="#">Medical <span class="submenu-arrow">›</span></a>
+                            <ul class="submenu">
+                                <li><a href="main.html">NEET UG</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Banking <span class="soon"> soon</span></a></li>
+                        <li><a href="#">SSC <span class="soon"> soon</span></a></li>
+                        <li><a href="#">Railway <span class="soon"> soon</span></a></li>
+                        <li><a href="#">State Government Exams <span class="soon"> soon</span></a></li>
+                        <li><a href="#">UPSC & Civil Services <span class="soon"> soon</span></a></li>
+                        <li><a href="#">Other Competitive Exams <span class="soon"> soon</span></a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="nav-item">Rankers Battle<span> <i class="fa fa-arrow-right"></i></span> <span
+                            class="soon"> soon</span></a></li>
+                <li><a href="#" class="nav-item">Practice Questions <span> <i class="fa fa-arrow-right"></i></span>
+                        <span class="soon"> soon</span>
+                    </a></li>
+            </ul>
+            <!-- Hamburger Menu Toggle -->
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="welcome-div" style="padding:1rem 5%;">
+            <h2>NEET UG Previous Year Questions</h2>
+        </div>
+
+        <!-- search-section-ch-wise -->
+        <form class="pyq-search">
+            <input type="text" placeholder="Exam Name">
+
+            <select name="year" id="year-select" required>
+                <option value="">Select Year</option>
+                <option value="2025">2025</option>
+                <option value="2024">2024</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+            </select>
+
+            <select name="subject" id="subject-select" required>
+                <option value="">Select Subject</option>
+                <option value="physics">Physics</option>
+                <option value="chemistry">Chemistry</option>
+                <option value="biology">Biology</option>
+            </select>
+
+            <select name="chapter" id="chapter-select" required>
+                <!-- for physics -->
+                <option>Physical world and Measurement</option>
+                <option>Kinematics</option>
+                <option>Laws of Motion</option>
+                <option>Work, Energy and Power</option>
+                <option>Motion of System of Particles and Rigid Body</option>
+                <option>Gravitation</option>
+                <option>Properties of Bulk Matter</option>
+                <option>Thermodynamics</option>
+                <option>Behaviour of Perfect Gas and Kinetic Theory</option>
+                <option>Oscillations and Waves</option>
+                <option>Electrostatics</option>
+                <option>Current Electricity</option>
+                <option>Magnetic Effects of Current and Magnetism</option>
+                <option>Electromagnetic Induction and Alternating Currents</option>
+                <option>Electromagnetic Waves</option>
+                <option>Optics</option>
+                <option>Dual Nature of Matter and Radiation</option>
+                <option>Atoms and Nuclei</option>
+                <option>Electronic Devices</option>
+                <!-- for chemistry -->
+                <option>Some Basic Concepts of Chemistry</option>
+                <option>Structure of Atom</option>
+                <option>Classification of Elements and Periodicity</option>
+                <option>Chemical Bonding and Molecular Structure</option>
+                <option>States of Matter: Gases and Liquids</option>
+                <option>Thermodynamics</option>
+                <option>Equilibrium</option>
+                <option>Redox Reactions</option>
+                <option>Hydrogen</option>
+                <option>The s-Block Element</option>
+                <option>The p-Block Element (Groups 13 & 14)</option>
+                <option>Organic Chemistry - Basic Principles</option>
+                <option>Hydrocarbons</option>
+                <option>Environmental Chemistry</option>
+                <option>Solid State</option>
+                <option>Solutions</option>
+                <option>Electrochemistry</option>
+                <option>Chemical Kinetics</option>
+                <option>Surface Chemistry</option>
+                <option>The p-Block Elements</option>
+                <option>The d-Block and f-Block Elements</option>
+                <option>Coordination Compounds</option>
+                <option>Organic Chemistry - Carbon Compounds</option>
+                <!-- for bio -->
+                <option value="living_world">The Living World</option>
+                <option value="biological_classification">Biological Classification</option>
+                <option value="plant_kingdom">Plant Kingdom</option>
+                <option value="animal_kingdom">Animal Kingdom</option>
+                <option value="morphology_flowering_plants">Morphology of Flowering Plants</option>
+                <option value="anatomy_flowering_plants">Anatomy of Flowering Plants</option>
+                <option value="structural_organisation_animals">Structural Organisation in Animals</option>
+                <option value="cell_structure_function">Cell Structure and Function</option>
+                <option value="biomolecules">Biomolecules</option>
+                <option value="transport_plants">Transport in Plants</option>
+                <option value="mineral_nutrition">Mineral Nutrition</option>
+                <option value="photosynthesis">Photosynthesis in Higher Plants</option>
+                <option value="respiration_plants">Respiration in Plants</option>
+                <option value="plant_growth_development">Plant Growth and Development</option>
+                <option value="digestion_absorption">Digestion and Absorption</option>
+                <option value="breathing_gas_exchange">Breathing and Exchange of Gases</option>
+                <option value="body_fluids_circulation">Body Fluids and Circulation</option>
+                <option value="excretory_products_elimination">Excretory Products and Their Elimination</option>
+                <option value="locomotion_movement">Locomotion and Movement</option>
+                <option value="neural_control_coordination">Neural Control and Coordination</option>
+                <option value="chemical_coordination_integration">Chemical Coordination and Integration</option>
+                <option value="reproduction_in_organisms">Reproduction in Organisms</option>
+                <option value="sexual_reproduction_flowering_plants">Sexual Reproduction in Flowering Plants</option>
+                <option value="human_reproduction">Human Reproduction</option>
+                <option value="reproductive_health">Reproductive Health</option>
+                <option value="principles_inheritance_variation">Principles of Inheritance and Variation</option>
+                <option value="molecular_basis_inheritance">Molecular Basis of Inheritance</option>
+                <option value="evolution">Evolution</option>
+                <option value="human_health_disease">Human Health and Disease</option>
+                <option value="food_production_enhancement">Strategies for Enhancement in Food Production</option>
+                <option value="microbes_human_welfare">Microbes in Human Welfare</option>
+                <option value="biotechnology_principles_processes">Biotechnology: Principles and Processes</option>
+                <option value="biotechnology_applications">Biotechnology and Its Applications</option>
+                <option value="organisms_populations">Organisms and Populations</option>
+                <option value="ecosystem">Ecosystem</option>
+                <option value="biodiversity_conservation">Biodiversity and Conservation</option>
+                <option value="environmental_issues">Environmental Issues</option>
+            </select>
+
+            </select>
+
+            <button type="submit">Search</button>
+        </form>
+
+        <!-- Question Display Container -->
+        <div class="slider-container">
+            <div class="question-box">
+                <h3>Question</h3>
+                <p>
+                    Select the question of your choice from the above dropdown !
+                </p>
+            </div>
+            <!-- OPTIONS -->
+            <div class="options">
+                <div class="option">
+                    <div class="option-label">A</div>
+                    <div class="option-text">Option answer will be written here</div>
+                </div>
+
+                <div class="option">
+                    <div class="option-label">B</div>
+                    <div class="option-text">Option answer will be written here</div>
+                </div>
+
+                <div class="option">
+                    <div class="option-label">C</div>
+                    <div class="option-text">Option answer will be written here</div>
+                </div>
+
+                <div class="option">
+                    <div class="option-label">D</div>
+                    <div class="option-text">Option answer will be written here</div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="bottom-controls">
+            <button class="slider-btn prev-btn">&#10094;</button>
+            <div class="solution-box">
+                <button id="showSolutionBtn">Show Solution</button>
+                <div id="solution" class="solution">
+                    <h4>Solution:</h4>
+                    <p>Solution and explanation will be displayed here.</p>
+                </div>
+            </div>
+            <button class="slider-btn next-btn">&#10095;</button>
+        </div>
+    </main>
+
+    <!-- footer section -->
+    <footer class="site-footer">
+        <div class="footer-container">
+
+            <!-- Brand -->
+            <div class="footer-col">
+                <h3 class="footer-logo">PYQ Library</h3>
+                <p class="footer-text">
+                    Our PYQ Library provides free, well-organized previous year question papers across multiple
+                    competitive exams, helping you understand real exam patterns and important topics. Built for focused
+                    preparation today, with smarter practice tools and advanced features planned for the future.
+                </p>
+                <a href="mailto:hello@PYQLibrary.in" class="footer-email">hello@PYQLibrary.in</a>
+            </div>
+
+            <!-- Exams -->
+            <div class="footer-col">
+                <h4>Exams Category</h4>
+                <ul>
+                    <li>Bank Exams (upcoming)</li>
+                    <li>SSC</li>
+                    <li>Railway (upcoming)</li>
+                    <li>State Exam</li>
+                    <li>Others Exam</li>
+                    <li>Teaching (upcoming)</li>
+                    <li>Insurance (upcoming)</li>
+                    <li>Medical Exam</li>
+                    <li>Engineering Exam</li>
+                    <li>Defence Exam</li>
+                    <li>GATE Exam</li>
+                    <li>NTA CUET Exam (upcoming)</li>
+                </ul>
+            </div>
+
+            <!-- Upcoming Exams -->
+            <div class="footer-col">
+                <h4>Upcoming Exam</h4>
+                <ul>
+                    <li>JEE Main 2026 : Session 1</li>
+                    <li>SSC CGL Tier-II 2025</li>
+                    <li>AFCAT 1 2026</li>
+                    <li>Railway Group D 2025</li>
+                    <li>SSC MTS 2025</li>
+                    <li>RRB ALP CBT-1 2025</li>
+                    <li>DSSSB PRT 2025</li>
+                    <li>RRB JE 2025</li>
+                    <li>CTET 2025 Paper I</li>
+                    <li>GATE ME 2026</li>
+                    <li>GATE EE 2026</li>
+                    <li>GATE EC 2026</li>
+                    <li>GATE CE 2026</li>
+                    <li>GATE CS 2026</li>
+                    <li>RRB Technician CBT-1 2025</li>
+                    <li>UP Police SI 2025</li>
+                    <li>SSC GD 2025-26</li>
+                </ul>
+            </div>
+
+            <!-- Company -->
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                    <li>Privacy Policy</li>
+                </ul>
+
+                <div class="footer-social">
+                    <span class="social-icons"><i class="fa-brands fa-facebook-f facebook"
+                            style="color: #3b5998;"></i></span>
+                    <span class="social-icons"><i class="fa-brands fa-instagram instagram"
+                            style="color: #e4405f;"></i></span>
+                    <span class="social-icons"><i class="fa-brands fa-youtube youtube"
+                            style="color: #ff0000;"></i></span>
+                    <span class="social-icons"><i class="fa-brands fa-linkedin-in linkedin"
+                            style="color: #0077b5;"></i></span>
+                    <span class="social-icons"><i class="fa-brands fa-x-twitter x" style="color: #000000;"></i></span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            PYQLibrary Copyright ESTD:-2026 PYQLibrary Company. All right reserved
+        </div>
+    </footer>
+
+    <script src="../../public/definedsearch.js"></script>
+    <script src="../../public/responsiveNav.js"></script>
+    <script src="../../public/main.js"></script>
+    <!-- KaTeX for LaTeX rendering -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+</body>
+
+</html>
