@@ -1,0 +1,391 @@
+/* search-section-ch-wise */
+/* MAIN SEARCH BAR */
+.pyq-search {
+  width: 90%;
+  max-width: 800px;
+  padding: 8px;
+  margin: 20px auto;
+  /* Centered and below welcome text */
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) auto;
+  gap: 2px;
+
+  border: 10px solid #5b4fd8;
+  border-radius: 45px;
+  background: #ffffff;
+}
+
+/* INPUTS */
+.pyq-search input {
+  width: 100%;
+  padding: 7px 8px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  background: #f3f4f6;
+  font-size: 15px;
+  color: #111827;
+}
+
+.pyq-search input::placeholder {
+  color: #6b7280;
+}
+
+/* SELECT DROPDOWNS */
+.pyq-search select {
+  width: 100%;
+  padding: 7px 8px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  background: #f3f4f6;
+  font-size: 15px;
+  color: #111827;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%236b7280' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding-right: 35px;
+}
+
+.pyq-search select:hover {
+  background-color: #e5e7eb;
+}
+
+.pyq-search select:focus {
+  background-color: #fff;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+.pyq-search select option {
+  padding: 10px;
+  background: #fff;
+  color: #111827;
+}
+
+
+/* SEARCH BUTTON */
+.pyq-search button {
+  padding: 14px 34px;
+  border-radius: 30px;
+  border: none;
+  background: #111827;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+  white-space: nowrap;
+}
+
+.pyq-search button:hover {
+  background: #4338ca;
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+  .pyq-search {
+    grid-template-columns: 1fr 1fr;
+    width: 95%;
+  }
+
+  .pyq-search button {
+    grid-column: span 2;
+    /* Make button full width on tablet grid */
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .pyq-search {
+    grid-template-columns: 1fr;
+    border-width: 6px;
+    border-radius: 28px;
+  }
+
+  .pyq-search button {
+    width: 100%;
+    grid-column: span 1;
+  }
+}
+
+/* Slider Styles */
+.slider-container {
+  width: 97%;
+  max-width: 1350px;
+  height: max-content;
+  /* Adjust height as needed */
+  margin: 0.1rem auto;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border: 5px solid white;
+  /* padding-bottom: 40px; */
+  /* Space for buttons at bottom on mobile if needed */
+}
+
+/* Button Styles */
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 1rem;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.slider-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.bottom-controls {
+  display: contents;
+}
+
+.prev-btn {
+  left: 20px;
+}
+
+.next-btn {
+  right: 20px;
+}
+
+/* Responsive Navigation Buttons (Arrow placement) near solution button */
+@media (max-width: 1490px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .slider-container {
+    width: 95%;
+    margin-bottom: 20px;
+  }
+
+  /* Reset buttons to be part of flex flow */
+  .slider-btn {
+    position: relative;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    transform: none;
+    display: inline-flex;
+    margin: 5px;
+    background-color: rgba(37, 99, 235, 0.9);
+    width: 50px;
+    height: 50px;
+    font-size: 1.8rem;
+    z-index: 5;
+  }
+
+  /* Container for navigation at bottom (Added in HTML) */
+  .bottom-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+    gap: 15px;
+    flex-wrap: wrap;
+    /* For very small screens */
+  }
+
+  .solution-box {
+    margin-top: 0;
+    width: auto;
+  }
+
+  #showSolutionBtn {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  /* Align arrows symmetrically on sides of the button */
+  .prev-btn {
+    margin-right: 10px;
+  }
+
+  .next-btn {
+    margin-left: 10px;
+  }
+}
+
+/* question area */
+/* MAIN CARD */
+.mcq-container {
+  width: 90%;
+  max-width: 900px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* QUESTION */
+.question-box {
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 5px;
+  background: #fafafa;
+  min-height: 170px;
+}
+
+.question-box h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+.question-box p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #374151;
+}
+
+/* OPTIONS */
+.options {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
+}
+
+.option {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding: 13px 15px;
+  border: 2px solid #d1d5db;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  background: #fff;
+}
+
+.option:hover {
+  border-color: #4f46e5;
+  background: #eef2ff;
+}
+
+.option-label {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #4f46e5;
+  color: #fff;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.option-text {
+  font-size: 17px;
+  color: #111827;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .question-box p {
+    font-size: 16px;
+  }
+
+  .option-text {
+    font-size: 16px;
+  }
+}
+
+/* option  */
+.solution-box {
+  margin-top: 20px;
+}
+
+.solution {
+  display: none;
+  /* Hidden by default */
+  margin-top: 15px;
+  margin-block: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 15px;
+  border-left: 4px solid #2563eb;
+  background: #f1f5ff;
+  border-radius: 6px;
+
+  max-height: 200px;
+  /* Limit height */
+  overflow-y: auto;
+  /* Scroll vertically if content is long */
+  overflow-x: hidden;
+  /* Prevent horizontal scroll */
+  word-wrap: break-word;
+  /* Wrap long words */
+}
+
+#showSolutionBtn {
+  margin-left: 5%;
+  margin-top: auto;
+  margin-bottom: 10px;
+  padding: 10px 18px;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#showSolutionBtn:hover {
+  background: #1e40af;
+}
+
+/* shine soon */
+.soon {
+  position: relative;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #d4af37;
+  /* Gold base */
+  background: linear-gradient(120deg,
+      #b8860b 0%,
+      #ffd700 40%,
+      #ffffff 50%,
+      #ffd700 60%,
+      #b8860b 100%);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3.5s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: -200% -200%;
+  }
+
+  100% {
+    background-position: 200% 200%;
+  }
+}
