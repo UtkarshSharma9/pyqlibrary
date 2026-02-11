@@ -1,3 +1,4 @@
+
 const { connectToDatabase, getDb } = require('./db');
 const questionsData = require('./questionsData');
 

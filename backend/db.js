@@ -36,4 +36,3 @@ function getDb() {
 }
 
 module.exports = { connectToDatabase, getDb };
-
