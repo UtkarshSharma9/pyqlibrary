@@ -420,7 +420,7 @@ ul {
 /* Responsive Image Container */
 .responsive-image-container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 900px;
     margin: 40px auto;
     padding: 0 20px;
     display: flex;
