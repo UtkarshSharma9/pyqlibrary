@@ -107,7 +107,7 @@
         },
         'CDS': {
             'mathematics': ['Number System', 'Simplification', 'HCF & LCM', 'Ratio & Proportion', 'Percentage', 'Average', 'Profit & Loss', 'Simple & Compound Interest', 'Time & Work', 'Time, Speed & Distance', 'Algebra', 'Geometry', 'Mensuration', 'Trigonometry', 'Statistics'],
-            'english': ['Grammar Basics', 'Vocabulary', 'Sentence Improvement', 'Error Spotting', 'Reading Comprehension', 'Idioms & Phrases', 'One Word Substitution', 'Miscellaneous'],
+            'english': ['Grammar Basics', 'Vocabulary', 'Sentence Improvement', 'Error Spotting', 'Idioms & Phrases', 'Jumbled Sentences', 'One Word Substitution', 'Miscellaneous'],
             'general-studies': ['Indian History', 'Indian Geography', 'Indian Polity', 'Indian Economy', 'Current Affairs', 'Sports & Awards'],
             'physics': ['Motion', 'Laws of Motion', 'Work, Energy & Power', 'Gravitation', 'Heat & Thermodynamics', 'Wave Motion & Sound', 'Light (Reflection & Refraction)', 'Electricity', 'Magnetism', 'Electromagnetic Induction', 'Modern Physics', 'Semiconductors', 'Miscellaneous'],
             'chemistry': ['Atomic Structure', 'Chemical Bonding', 'Periodic Table', 'Acids, Bases & Salts', 'Chemical Reactions', 'Metals and Non-metals', 'Organic Chemistry Basics', 'Miscellaneous'],

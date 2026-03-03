@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CDS - PYQ Library</title>
+    <title>JEE MAINS - PYQ Library</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
@@ -66,6 +66,13 @@
                         <span class="soon"> soon</span>
                     </a></li>
             </ul>
+            <!-- Search Icon -->
+            <div class="nav-search">
+                <button type="button" id="searchOpenBtn" aria-label="Open Search">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+
             <!-- Hamburger Menu Toggle -->
             <div class="menu-toggle">
                 <span></span>
@@ -302,6 +309,22 @@
         </div>
     </footer>
 
+    <!-- Search Overlay -->
+    <div id="searchOverlay" class="search-overlay">
+        <div class="search-overlay-content">
+            <div class="search-bar-container">
+                <i class="fa fa-search search-overlay-icon"></i>
+                <input type="text" id="overlaySearchInput" placeholder="Search exams..." autocomplete="off">
+                <button id="searchCloseBtn" class="close-btn">&times;</button>
+            </div>
+            <div id="searchResults" class="search-results-grid">
+                <!-- Result cards will be injected here -->
+            </div>
+            <div id="searchMessage" class="search-message">Start typing to search exams</div>
+        </div>
+    </div>
+
+    <script src="../../public/script.js"></script>
     <script src="../../public/definedsearch.js"></script>
     <script src="../../public/responsiveNav.js"></script>
     <script src="../../public/main.js"></script>

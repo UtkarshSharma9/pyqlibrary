@@ -1,34 +1,37 @@
-// Banner Image Slider
-document.addEventListener('DOMContentLoaded', function () {
-    const bannerImage = document.getElementById('bannerImage');
+const slides = document.getElementById("slides");
+const dotsContainer = document.getElementById("dots");
+const totalSlides = slides.children.length;
 
-    if (bannerImage) {
-        const images = [
-            'public/sliderimg_1.png',
-            'public/sliderimg_2.png',
-            'public/sliderimg_3.png',
-            'public/sliderimg_4.png',
-            'public/sliderimg_5.png'
-        ];
+let index = 0;
 
-        let currentIndex = 0;
+// Create dots dynamically
+for (let i = 0; i < totalSlides; i++) {
+  const dot = document.createElement("div");
+  dot.classList.add("dot");
 
-        // Function to change image with fade effect
-        function changeImage() {
-            // Add fade out effect
-            bannerImage.style.opacity = '0';
+  if (i === 0) {
+    dot.classList.add("active");
+  }
 
-            setTimeout(() => {
-                // Change to next image
-                currentIndex = (currentIndex + 1) % images.length;
-                bannerImage.src = images[currentIndex];
+  dot.addEventListener("click", () => {
+    index = i;
+    updateSlider();
+  });
 
-                // Fade in
-                bannerImage.style.opacity = '1';
-            }, 300); // Wait for fade out to complete
-        }
+  dotsContainer.appendChild(dot);
+}
 
-        // Change image every 6 seconds
-        setInterval(changeImage, 6000);
-    }
-});
+const dots = document.querySelectorAll(".dot");
+
+function updateSlider() {
+  slides.style.transform = `translateX(-${index * 100}%)`;
+
+  dots.forEach(dot => dot.classList.remove("active"));
+  dots[index].classList.add("active");
+}
+
+// Automatic sliding
+setInterval(() => {
+  index = (index + 1) % totalSlides;
+  updateSlider();
+}, 3000);
