@@ -96,15 +96,6 @@
      * Structure: Exam Name -> Subject -> List of Chapters
      */
     const chaptersData = {
-        'AFCAT': {
-            'mathematics': ['Number System', 'Simplification', 'HCF & LCM', 'Decimal & Fractions', 'Percentage', 'Ratio & Proportion', 'Average', 'Profit & Loss', 'Simple Interest', 'Time & Work', 'Time, Speed & Distance', 'Mixtures & Allegations', 'Algebraic Identities & Linear Equations', 'Quadratic Equations', 'Triangles', 'Circles', 'Polygons', 'Measurement', 'Trigonometric Ratios & Identities', 'Heights & Distances', 'Data Interpretation', 'Miscellaneous'],
-            'physics': ['Motion', 'Laws of Motion', 'Work, Energy & Power', 'Gravitation', 'Heat & Thermodynamics', 'Wave Motion & Sound', 'Light (Reflection & Refraction)', 'Electricity', 'Magnetism', 'Electromagnetic Induction', 'Modern Physics', 'Semiconductors', 'Miscellaneous'],
-            'chemistry': ['Atomic Structure', 'Chemical Bonding', 'Periodic Table', 'Acids, Bases & Salts', 'Chemical Reactions', 'Metals and Non-metals', 'Organic Chemistry Basics', 'Miscellaneous'],
-            'biology': ['Human Body Systems', 'Nutrition', 'Diseases & Immunity', 'Plant Biology Basics', 'Genetics', 'Environment & Ecology', 'Miscellaneous'],
-            'general-studies': ['Indian History', 'Indian Geography', 'Indian Polity', 'Indian Economy', 'Current Affairs', 'Sports & Awards'],
-            'english': ['Grammar Basics', 'Vocabulary', 'Sentence Improvement', 'Error Spotting', 'Reading Comprehension', 'Idioms & Phrases', 'One Word Substitution', 'Miscellaneous'],
-            'reasoning': ['Verbal Reasoning', 'Non-Verbal Reasoning', 'Coding-Decoding', 'Blood Relations', 'Series & Sequences', 'Direction Sense', 'Syllogism', 'Analogy', 'Classification', 'Puzzle & Seating Arrangement', 'Miscellaneous']
-        },
         'CDS': {
             'mathematics': ['Number System', 'Simplification', 'HCF & LCM', 'Ratio & Proportion', 'Percentage', 'Average', 'Profit & Loss', 'Simple & Compound Interest', 'Time & Work', 'Time, Speed & Distance', 'Algebra', 'Geometry', 'Mensuration', 'Trigonometry', 'Statistics'],
             'english': ['Grammar Basics', 'Vocabulary', 'Sentence Improvement', 'Error Spotting', 'Idioms & Phrases', 'Jumbled Sentences', 'One Word Substitution', 'Miscellaneous'],

@@ -25,11 +25,11 @@ document.addEventListener('DOMContentLoaded', () => {
             path: "exams/nda/main.html"
         },
         {
-            title: "INDIAN ARMY",
-            sub: "Indian Army GD",
-            logoClass: "indianarmygd",
-            logoImg: "https://th.bing.com/th/id/OIP.Cs-N47lWvOrZaptnN9LkVQHaHa?w=159&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
-            path: "exams/indianarmygd/main.html"
+            title: "SSC CHSL",
+            sub: "SSC Combined Higher Secondary Level",
+            logoClass: "sscchsl",
+            logoImg: "https://th.bing.com/th/id/OIP.F0k9_o35AG7eQFH5-Sj97wHaEK?w=301&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
+            path: "exams/sscchsl/main.html"
         },
         {
             title: "PUNJAB POLICE",
