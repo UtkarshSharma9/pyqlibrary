@@ -73,6 +73,23 @@ document.addEventListener('DOMContentLoaded', () => {
       questionText.innerHTML = `Q${currentIndex + 1}: ${q.question}`;
     }
 
+    // Update Year Badge (bottom-right of question box)
+    const questionBox = document.querySelector('.question-box');
+    if (questionBox) {
+      let yearBadge = questionBox.querySelector('.question-year-badge');
+      if (!yearBadge) {
+        yearBadge = document.createElement('span');
+        yearBadge.className = 'question-year-badge';
+        questionBox.appendChild(yearBadge);
+      }
+      if (q.year) {
+        yearBadge.textContent = `Year: ${q.year}`;
+        yearBadge.style.display = 'inline-block';
+      } else {
+        yearBadge.style.display = 'none';
+      }
+    }
+
     // Update Options
     if (optionsContainer) {
       optionsContainer.innerHTML = ''; // Clear previous
