@@ -155,7 +155,7 @@ const server = http.createServer(async (req, res) => {
     let pathname = parsedUrl.pathname;
 
     if (pathname === '/api/questions') {
-        const { exam, year, subject, chapter } = parsedUrl.query;
+        const { exam, subject, chapter } = parsedUrl.query;
 
         try {
             const db = getDb();
@@ -166,11 +166,6 @@ const server = http.createServer(async (req, res) => {
             if (exam) query.exam = { $regex: new RegExp(`^${exam}$`, 'i') };
             if (subject) query.subject = { $regex: new RegExp(`^${subject}$`, 'i') };
 
-            // Handle year as both string and number
-            if (year) {
-                const numYear = parseInt(year);
-                query.year = { $in: [year, !isNaN(numYear) ? numYear : year] };
-            }
 
             console.log(`Querying DB with:`, JSON.stringify(query));
             let filteredQuestions = await collection.find(query).toArray();

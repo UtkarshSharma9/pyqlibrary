@@ -20,13 +20,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!searchForm) return null;
 
     const examInput = searchForm.querySelector('input[placeholder="Exam Name"]');
-    const yearSelect = document.getElementById('year-select');
     const subjectSelect = document.getElementById('subject-select');
     const chapterSelect = document.getElementById('chapter-select');
 
     return {
       exam: examInput ? examInput.value.trim().toUpperCase() : '',
-      year: yearSelect ? yearSelect.value : '',
       subject: subjectSelect ? subjectSelect.value : '',
       chapter: chapterSelect ? chapterSelect.value : ''
     };
@@ -38,7 +36,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Note: adjust base URL if necessary, but relative path works if served from same origin
     const params = new URLSearchParams();
     if (criteria.exam) params.append('exam', criteria.exam);
-    if (criteria.year) params.append('year', criteria.year);
     if (criteria.subject) params.append('subject', criteria.subject);
     if (criteria.chapter) params.append('chapter', criteria.chapter);
 
