@@ -140,6 +140,13 @@
         'NEET PG': {
             // Keep default empty or add if provided later
             'all': []
+        },
+        'PUNJAB POLICE CONSTABLE': {
+            'general-awareness': ['Constitution of India & its Features', 'Central & State Legislature', 'Executive & Judicial Institutions', 'Local Government Institutions', 'History of India', 'History of Punjab', 'Geography of India', 'Geography of Punjab', 'Culture of Punjab', 'Economy of Punjab', 'Health & Nutrition', 'Current Affairs (National & International)', 'Government Schemes', 'Sports & Awards'],
+            'quantitative-aptitude': ['Number System', 'Simplification', 'Average', 'Decimal & Fractions', 'Ratio & Proportion', 'Percentages', 'Profit & Loss', 'Simple Interest', 'Time & Work', 'Time, Speed & Distance', 'Basic Data Interpretation (Bar & Line Graphs)'],
+            'mental-ability-reasoning': ['Number Series', 'Letter Series', 'Sequencing', 'Statements & Conclusions', 'Pattern Completion', 'Order & Ranking', 'Direction & Distances', 'Relationship Problems', 'Coding-Decoding'],
+            'english': ['Sentence Rearrangement', 'Sentence Correction', 'Error Spotting', 'Fill in the Blanks', 'Spelling Correction', 'Synonyms', 'Antonyms', 'One Word Substitution'],
+            'digital-literacy-awareness': ['Fundamentals of Computers', 'MS Office (Word, PowerPoint)', 'Internet & World Wide Web', 'Web Search Engines', 'Email Communication', 'Mobile Phones (Basic Conceptual Knowledge)']
         }
     };
 
