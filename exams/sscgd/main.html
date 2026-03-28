@@ -35,10 +35,10 @@
                                 <ul class="submenu">
                                     <li><a href="../nda/main.html">NDA</a></li>
                                     <li><a href="../cds/main.html">CDS</a></li>
-                                    <li><a href="../ssccpo/main.html">SSC CPO</a></li>
-                                    <li><a href="../sscgd/main.html">SSC GD</a></li>
-                                    <li><a href="../airforcevayu/main.html">AIRFORCE AGNIVEER VAYU</a></li>
                                     <li><a href="../punjabpoliceconstable/main.html">PUNJAB POLICE</a></li>
+                                    <li><a href="../ssccpo/main.html" class="coming-soon-tooltip">SSC CPO</a></li>
+                                    <li><a href="../sscgd/main.html" class="coming-soon-tooltip">SSC GD</a></li>
+                                    
                                 </ul>
                             </li>
 
@@ -59,9 +59,9 @@
                             <li class="has-submenu">
                                 <a href="#">SSC <span class="submenu-arrow">›</span></a>
                                 <ul class="submenu">
-                                    <li><a href="../sscchsl/main.html">SSC CHSL</a></li>
+                                    <li><a href="#">SSC CHSL</a></li>
                                     <li><a href="#">SSC CPO</a></li>
-                                    <li><a href="#">SSC GD</a></li>
+                                    <li><a href="exams/sscgd/main.html">SSC GD</a></li>
                                     <li><a href="#">SSC CGL</a></li>
                                     <li><a href="#">SSC MTS</a></li>
                                 </ul>
@@ -100,87 +100,82 @@
 
     <main>
         <div class="welcome-div" style="padding:1rem 5%;">
-            <h2>JEE Mains Previous Year Questions</h2>
+            <h2>SSC GD Previous Year Questions</h2>
         </div>
 
         <!-- search-section-ch-wise -->
         <form class="pyq-search">
-            <input type="text" placeholder="Exam Name">
+
+            <input type="text" placeholder="Exam Name" value="SSC GD">
 
             <select name="subject" id="subject-select" required>
                 <option value="">Select Subject</option>
-                <option value="mathematics">Mathematics</option>
-                <option value="physics">Physics</option>
-                <option value="chemistry">Chemistry</option>
+                <option value="general-intelligence-reasoning">General Intelligence Reasoning</option>
+                <option value="general-knowledge-general-awareness">General Knowledge & General Awareness</option>
+                <option value="elementary-mathematics">Elementary Mathematics</option>
+                <option value="english-language">English Language</option>
             </select>
 
             <select name="chapter" id="chapter-select" required>
-                <!-- for physics -->
-                <option>Physical world and Measurement</option>
-                <option>Kinematics</option>
-                <option>Laws of Motion</option>
-                <option>Work, Energy and Power</option>
-                <option>Motion of System of Particles and Rigid Body</option>
-                <option>Gravitation</option>
-                <option>Properties of Bulk Matter</option>
-                <option>Thermodynamics</option>
-                <option>Behaviour of Perfect Gas and Kinetic Theory</option>
-                <option>Oscillations and Waves</option>
-                <option>Electrostatics</option>
-                <option>Current Electricity</option>
-                <option>Magnetic Effects of Current and Magnetism</option>
-                <option>Electromagnetic Induction and Alternating Currents</option>
-                <option>Electromagnetic Waves</option>
-                <option>Optics</option>
-                <option>Dual Nature of Matter and Radiation</option>
-                <option>Atoms and Nuclei</option>
-                <option>Electronic Devices</option>
-                <!-- for chemistry -->
-                <option>Some Basic Concepts of Chemistry</option>
-                <option>Structure of Atom</option>
-                <option>Classification of Elements and Periodicity</option>
-                <option>Chemical Bonding and Molecular Structure</option>
-                <option>States of Matter: Gases and Liquids</option>
-                <option>Thermodynamics</option>
-                <option>Equilibrium</option>
-                <option>Redox Reactions</option>
-                <option>Hydrogen</option>
-                <option>The s-Block Element</option>
-                <option>The p-Block Element (Groups 13 & 14)</option>
-                <option>Organic Chemistry - Basic Principles</option>
-                <option>Hydrocarbons</option>
-                <option>Environmental Chemistry</option>
-                <option>Solid State</option>
-                <option>Solutions</option>
-                <option>Electrochemistry</option>
-                <option>Chemical Kinetics</option>
-                <option>Surface Chemistry</option>
-                <option>The p-Block Elements (Groups 15, 16, 17, 18)</option>
-                <option>The d-Block and f-Block Elements</option>
-                <option>Coordination Compounds</option>
-                <option>Organic Chemistry - Carbon Compounds</option>
-                <!-- for maths -->
-                <option>Sets, Relations and Functions</option>
-                <option>Complex Numbers and Quadratic Equations</option>
-                <option>Matrices and Determinants</option>
-                <option>Permutations and Combinations</option>
-                <option>Mathematical Induction</option>
-                <option>Binomial Theorem and Its Applications</option>
-                <option>Sequences and Series</option>
-                <option>Limits, Continuity and Differentiability</option>
-                <option>Integration</option>
-                <option>Differential Equations</option>
-                <option>Co-ordinate Geometry</option>
-                <option>Coordinate Geometry</option>
-                <option>Vector Algebra</option>
-                <option>Three Dimensional Geometry</option>
-                <option>Probability and Statistics</option>
-                <option>Trigonometry</option>
+                <option value="">Select Chapter</option>
+                <!-- English Language -->
+                <option>Fill in the Blanks</option>
+                <option>Error Spotting</option>
+                <option>Phrase Replacement</option>
+                <option>Synonyms</option>
+                <option>Antonyms</option>
+                <option>Cloze Test</option>
+                <option>Idioms and Phrases</option>
+                <option>Spellings</option>
+                <option>One Word Substitution</option>
+                <!-- Reasoning -->
+                <option>Analogies</option>
+                <option>Similarities and Differences</option>
+                <option>Spatial Visualization</option>
+                <option>Spatial Orientation</option>
+                <option>Visual Memory</option>
+                <option>Observation</option>
+                <option>Relationship Concepts</option>
+                <option>Arithmetical Reasoning</option>
+                <option>Figural Classification</option>
+                <option>Arithmetic Number Series</option>
+                <option>Non Verbal Series</option>
+                <option>Coding and Decoding</option>
+
+                <!-- GK / GS -->
+                <option>Current Affairs</option>
+                <option>India and Neighbouring Countries</option>
+                <option>Sports</option>
+                <option>History</option>
+                <option>Culture</option>
+                <option>Geography</option>
+                <option>Economic Scene</option>
+                <option>General Polity</option>
+                <option>Indian Constitution</option>
+                <option>Scientific Research</option>
+
+                <!-- Mathematics -->
+                <option>Number System</option>
+                <option>Whole Numbers</option>
+                <option>Decimals and Fractions</option>
+                <option>Relationship Between Numbers</option>
+                <option>Basic Arithmetic Operations</option>
+                <option>Percentages</option>
+                <option>Ratio and Proportion</option>
+                <option>Averages</option>
+                <option>Simple Interest and Compound Interest</option>
+                <option>Profit and Loss</option>
+                <option>Discount</option>
+                <option>Mensuration</option>
+                <option>Time and Distance</option>
+                <option>Ratio and Time</option>
+                <option>Time and Work</option>
+
             </select>
 
             <button type="submit">Search</button>
-        </form>
 
+        </form>
         <!-- Question Display Container -->
         <div class="slider-container">
             <div class="question-box">

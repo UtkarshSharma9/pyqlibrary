@@ -135,11 +135,11 @@
             'english': ['Sentence Rearrangement', 'Sentence Correction', 'Error Spotting', 'Fill in the Blanks', 'Spelling Correction', 'Synonyms', 'Antonyms', 'One Word Substitution'],
             'digital-literacy-awareness': ['Fundamentals of Computers', 'MS Office (Word, PowerPoint)', 'Internet & World Wide Web', 'Web Search Engines', 'Email Communication', 'Mobile Phones (Basic Conceptual Knowledge)']
         },
-        'SSC CHSL': {
-            'general-awareness': ['History of India', 'Geography (India & World)', 'Indian Polity & Constitution', 'Indian Economy & Banking Awareness', 'General Science (Physics, Chemistry, Biology)', 'Environment & Ecology', 'Current Affairs (National & International)', 'Awards, Sports, Books & Important Events', 'Inventions, Discoveries & Cultural Heritage'],
-            'quantitative-aptitude': ['Number System', 'Simplification & Approximation', 'Percentage', 'Ratio, Proportion & Average', 'Profit, Loss & Discount', 'Simple & Compound Interest', 'Time, Work & Pipes', 'Time, Speed & Distance', 'Algebra (Basic Equations & Identities)', 'Geometry & Mensuration', 'Trigonometry (Basic Ratios & Heights)', 'Data Interpretation', 'Sequence & Series', 'LCM & HCF', 'Probability & Statistics'],
-            'general-intelligence-reasoning': ['Analogies & Classification', 'Coding-Decoding', 'Series (Number, Letter, Figure)', 'Odd One Out', 'Blood Relations', 'Direction & Distance', 'Syllogism', 'Venn Diagrams', 'Statements (Conclusion, Assumption, Argument)', 'Mathematical Operations', 'Cube & Dice', 'Mirror & Water Images', 'Paper Folding & Cutting', 'Clocks & Calendars', 'Embedded Figures', 'Data Sufficiency & Logical Puzzles'],
-            'english-language': ['Error Detection', 'Fill in the Blanks', 'Sentence Improvement & Rearrangement', 'Synonyms & Antonyms', 'Idioms & Phrases', 'One Word Substitution', 'Active & Passive Voice', 'Direct & Indirect Speech', 'Cloze Test', 'Spellings & Punctuation', 'Sentence Completion']
+        'SSC GD': {
+            'english-language': ['Fill in the Blanks', 'Error Spotting', 'Phrase Replacement', 'Synonyms', 'Antonyms', 'Cloze Test', 'Idioms and Phrases', 'Spellings', 'One Word Substitution'],
+            'general-intelligence-reasoning': ['Analogies', 'Similarities and Differences', 'Spatial Visualization', 'Spatial Orientation', 'Visual Memory', 'Observation', 'Relationship Concepts', 'Arithmetical Reasoning', 'Figural Classification', 'Arithmetic Number Series', 'Non Verbal Series', 'Coding and Decoding'],
+            'general-knowledge-general-awareness': ['Current Affairs', 'India and Neighbouring Countries', 'Sports', 'History', 'Culture', 'Geography', 'Economic Scene', 'General Polity', 'Indian Constitution', 'Scientific Research'],
+            'elementary-mathematics': ['Number System', 'Whole Numbers', 'Decimals and Fractions', 'Relationship Between Numbers', 'Basic Arithmetic Operations', 'Percentages', 'Ratio and Proportion', 'Averages', 'Simple Interest', 'Compound Interest', 'Profit and Loss', 'Discount', 'Mensuration', 'Time and Distance', 'Ratio and Time', 'Time and Work']
         }
     };
 

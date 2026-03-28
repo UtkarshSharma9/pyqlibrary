@@ -1198,7 +1198,7 @@ ul {
 }
 
 .coming-soon-tooltip::after {
-    content: "content of this exams will be available on few days";
+    content: "Content of this exam will be available in a few days";
     position: absolute;
     bottom: 98%;
     left: 50%;
