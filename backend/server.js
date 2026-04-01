@@ -181,6 +181,22 @@ const server = http.createServer(async (req, res) => {
                 console.log(`After chapter filter: ${filteredQuestions.length} questions`);
             }
 
+            // Remove duplicate questions based strictly on the 'question' text
+            const seenQuestions = new Set();
+            filteredQuestions = filteredQuestions.filter(q => {
+                if (!q.question || typeof q.question !== 'string') return true;
+                
+                // Normalize strictly by the question text (case-insensitive, single-spaced)
+                const questionCriteria = q.question.trim().toLowerCase().replace(/\s+/g, ' ');
+
+                if (seenQuestions.has(questionCriteria)) {
+                    return false; // Skip duplicate question
+                }
+                seenQuestions.add(questionCriteria);
+                return true;
+            });
+            console.log(`After duplicate question filter: ${filteredQuestions.length} questions`);
+
             res.writeHead(200, { 'Content-Type': 'application/json' });
             res.end(JSON.stringify(filteredQuestions));
         } catch (error) {
